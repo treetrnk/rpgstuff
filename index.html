@@ -1,15 +1,17 @@
 <!doctype html>
-<html>
+<html ng-app="storygenApp">
   <head>
     <title></title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/storygen.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/storygen.css" />
   </head>
-  <body>
+  <body ng-controller="storygenCon as sg">
     
     <div class="header">
       <div class="links right">
@@ -24,6 +26,24 @@
 
 
     <div class="body">
+
+      <!---- STORY GENERATOR ---->
+      <div class="story" ng-show='true'>
+        <h1 class="title">storygen</h1>
+        <form ng-submit="sg.regen('all')">
+          <input type="button" value="-" ng-click="sg.minus()" />
+          <input type="text" value="{{sg.number}}" size="1" 
+            ng-model="sg.number" />
+          <input type="button" value="+" ng-click="sg.plus()" /><br /><br />
+          <input type="submit" value="new story" />
+        </form>
+        <br />
+
+        <img class="icon" src="{{icon.path}}" 
+          style="background: {{icon.color}};" ng-click="sg.regen($index)" 
+          ng-repeat="icon in sg.icons" />
+      </div>
+      <br />
 
     </div>
 

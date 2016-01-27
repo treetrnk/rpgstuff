@@ -21,6 +21,12 @@ html, body {
   margin-bottom: 10px;
 }
 
+.title {
+  text-align: center;
+  margin: 7px 0px 7px 0px;
+  color: #222;
+}
+
 .right {
   float: right;
 }
