@@ -22,6 +22,7 @@ html, body {
   margin-left: 50px;
   max-width: 400px;
   font-size: 28pt;
+  line-height: 50px;
 }
 
 .title {
@@ -30,41 +31,46 @@ html, body {
   color: #222;
 }
 
-nav ul {
+#nav {
   list-style: none;
   font-size: 32pt;
   position: absolute;
-  margin-top: -7px;
+  margin-top: 3px;
   margin-left: -35px;
   display: block;
   z-index: 5;
   padding-bottom: 50px;
 }
 
-nav ul ul {
+#nav ul {
   display: none;
   list-style: none;
+  position: absolute;
+  width: 300px;
+  top: 63px;
+  left: -45px;
 }
 
-nav ul li {
+#nav li {
   position: relative;
 }
 
-nav ul li:hover > ul {
+#nav li a {
+  line-height: 50px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#nav li:hover > ul {
   display: block;
 }
 
-nav ul ul {
-  position: absolute;
-  top: 65px;
-}
-
-nav ul ul li {
+#nav ul li {
   float: none;
   position: relative;
 }
 
-nav ul ul li a {
+#nav ul li a {
   padding: 25px 50px;
   margin: 0px;
   background: #333;
@@ -73,7 +79,7 @@ nav ul ul li a {
   display: block;
 }
 
-nav ul ul li a:hover {
+#nav ul li a:hover {
   background: #111;
 }
 
