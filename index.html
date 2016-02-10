@@ -1,3 +1,10 @@
+<?php
+  if ($_GET['page'] != '') {
+    $page = $_GET['page'];
+  } else {
+    $page = "home";
+  }
+?>
 <!doctype html>
 <html ng-app="storygenApp">
   <head>
@@ -22,30 +29,21 @@
         </a>
         <a href="" class="donate">donate</a>
       </div>
-      <h1>&nbsp;&#9776; rpg stuff</h1>
+      <nav>
+        <ul>
+          <li>&nbsp;&#9776; 
+            <ul>
+              <li><a href="?page=fatecore">Fate Core Character Sheet</a></li>
+              <li><a href="?page=storygen">Random Story Generator</a></li>
+            </ul>
+          </li>
+        </ul> 
+      <h1>rpg stuff</h1>
     </div>
 
 
     <div class="body">
-
-      <!---- STORY GENERATOR ---->
-      <div class="story" ng-show='true'>
-        <h1 class="title">storygen</h1>
-        <form ng-submit="sg.regen('all')">
-          <input type="button" value="&#8722;" ng-click="sg.minus()" />
-          <input type="text" value="{{sg.number}}" size="1" 
-            ng-model="sg.number" />
-          <input type="button" value="+" ng-click="sg.plus()" /><br /><br />
-          <input type="submit" value="new story" />
-        </form>
-        <br />
-
-        <img src="{{icon.path}}" class="icon"  
-          style="background: {{icon.color}};" ng-click="sg.regen($index)" 
-          ng-repeat="icon in sg.icons" />
-      </div>
-      <br />
-
+      <?php include($_GET['page'] . "/"); ?>
     </div>
 
   </body>

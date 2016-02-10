@@ -13,18 +13,68 @@ html, body {
   background: #333;
   overflow-y: hidden;
   font-family: "Montserrat";
-  font-size: 1.3em;
 }
 
 .header h1 {
+  display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 50px;
+  max-width: 400px;
+  font-size: 28pt;
 }
 
 .title {
   text-align: center;
   margin: 7px 0px 7px 0px;
   color: #222;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 32pt;
+  position: absolute;
+  margin-top: -7px;
+  margin-left: -35px;
+  display: block;
+  z-index: 5;
+  padding-bottom: 50px;
+}
+
+nav ul ul {
+  display: none;
+  list-style: none;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 65px;
+}
+
+nav ul ul li {
+  float: none;
+  position: relative;
+}
+
+nav ul ul li a {
+  padding: 25px 50px;
+  margin: 0px;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+}
+
+nav ul ul li a:hover {
+  background: #111;
 }
 
 .right {
@@ -43,7 +93,7 @@ html, body {
 .donate {
   background: #fff;
   color: #333;
-  font-size: .45em;
+  font-size: 7pt;
   border-radius: 100px;
   width: 35px;
   text-decoration: none;
