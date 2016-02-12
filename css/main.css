@@ -38,10 +38,10 @@ html, body {
 
 #nav {
   list-style: none;
-  font-size: 32pt;
+  font-size: 48pt;
   position: absolute;
-  margin-top: -11px;
-  margin-left: -35px;
+  margin-top: -17px;
+  margin-left: -49px;
   display: block;
   z-index: 5;
 }
@@ -51,7 +51,7 @@ html, body {
   list-style: none;
   position: absolute;
   width: 300px;
-  top: 70px;
+  top: 77px;
   left: -45px;
 }
 
@@ -72,11 +72,11 @@ html, body {
 #nav ul li {
   float: none;
   position: relative;
-  line-height: inherit;
 }
 
 #nav ul li a {
-  padding: 10px 40px;
+  padding: 5px 25px;
+  line-height: 45px;
   margin: 0px;
   background: #333;
   color: #fff;
