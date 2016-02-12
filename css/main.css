@@ -26,6 +26,10 @@ html, body {
   line-height: 40px;
 }
 
+.header a {
+  text-decoration: none;
+}
+
 .title {
   text-align: center;
   margin: 7px 0px 7px 0px;
