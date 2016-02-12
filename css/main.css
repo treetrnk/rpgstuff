@@ -13,6 +13,7 @@ html, body {
   background: #333;
   overflow-y: hidden;
   font-family: "Montserrat";
+  box-shadow: 5px 5px 5px #999;
 }
 
 .header h1 {
@@ -22,7 +23,7 @@ html, body {
   margin-left: 50px;
   max-width: 400px;
   font-size: 28pt;
-  line-height: 50px;
+  line-height: 40px;
 }
 
 .title {
@@ -35,11 +36,10 @@ html, body {
   list-style: none;
   font-size: 32pt;
   position: absolute;
-  margin-top: 3px;
+  margin-top: -11px;
   margin-left: -35px;
   display: block;
   z-index: 5;
-  padding-bottom: 50px;
 }
 
 #nav ul {
@@ -47,7 +47,7 @@ html, body {
   list-style: none;
   position: absolute;
   width: 300px;
-  top: 63px;
+  top: 70px;
   left: -45px;
 }
 
@@ -56,7 +56,7 @@ html, body {
 }
 
 #nav li a {
-  line-height: 50px;
+  line-height: 75px;
   text-decoration: none;
   color: #fff;
 }
@@ -68,15 +68,19 @@ html, body {
 #nav ul li {
   float: none;
   position: relative;
+  line-height: inherit;
 }
 
 #nav ul li a {
-  padding: 25px 50px;
+  padding: 10px 40px;
   margin: 0px;
   background: #333;
   color: #fff;
   font-size: 14px;
   display: block;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #111;
+  text-align: center;
 }
 
 #nav ul li a:hover {
