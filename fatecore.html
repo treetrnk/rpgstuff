@@ -1,0 +1,131 @@
+<!doctype html>
+<html ng-app='fatecharsheetApp'>
+  <head>
+    <title>Fate Character Sheet</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/fonts.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body ng-controller="charsheet as cs">
+    <div class="sheet">
+      
+      <form >
+        <div class="id">
+          <img src="images/border-left.png" class="border" /><h3>ID</h3><img src="images/border-right.png" class="border" />
+          <br />
+          <table width=100%>
+            <tr>
+          </span>
+              <td>
+                <input type="text" name="name" placeholder="Name" /><br />
+                <textarea name='description' placeholder="Description"></textarea>
+              </td>
+              <td class="refresh">
+                <input type="text" name="refresh" placeholder="Refresh" />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="logo">
+          <a href="http://evilhat.com" target="_blank">
+            <img src="images/Powered-by-Fate-Final-Light-BG.png" width="300" />
+          </a>
+        </div><br />
+        <div class="aspects">
+          <img src="images/border-left.png" class="border" /><h3>ASPECTS</h3><img src="images/border-right.png" class="border" />
+          <br />
+          <input type="text" name="hc" placeholder="High Concept" /><br />
+          <input type="text" name="trouble" placeholder="Trouble" /><br />
+          <input type="text" name="aspect1" /><br />
+          <input type="text" name="aspect2" /><br />
+          <input type="text" name="aspect3" />
+        </div>
+        <div class="skills">
+          <img src="images/border-left.png" class="border" /><h3>SKILLS</h3><img src="images/border-right.png" class="border" />
+          <br />
+          <span class="skill-lvl">Superb (+5)</span>
+          <input type="text" name="skill5-1" class="grey" />
+          <input type="text" name="skill5-2" class="grey" />
+          <input type="text" name="skill5-3" class="grey" />
+          <input type="text" name="skill5-4" class="grey" />
+          <input type="text" name="skill5-5" class="grey" />
+          <br />
+          <span class="skill-lvl">Great (+4)</span>
+          <input type="text" name="skill4-1" />
+          <input type="text" name="skill4-2" class="grey" />
+          <input type="text" name="skill4-3" class="grey" />
+          <input type="text" name="skill4-4" class="grey" />
+          <input type="text" name="skill4-5" class="grey" />
+          <br />
+          <span class="skill-lvl">Good (+3)</span>
+          <input type="text" name="skill3-1" />
+          <input type="text" name="skill3-2" />
+          <input type="text" name="skill3-3" class="grey" />
+          <input type="text" name="skill3-4" class="grey" />
+          <input type="text" name="skill3-5" class="grey" />
+          <br />
+          <span class="skill-lvl">Fair (+2)</span>
+          <input type="text" name="skill2-1" />
+          <input type="text" name="skill2-2" />
+          <input type="text" name="skill2-3" />
+          <input type="text" name="skill2-4" class="grey" />
+          <input type="text" name="skill2-5" class="grey" />
+          <br />
+          <span class="skill-lvl">Average (+1)</span>
+          <input type="text" name="skill1-1" />
+          <input type="text" name="skill1-2" />
+          <input type="text" name="skill1-3" />
+          <input type="text" name="skill1-4" />
+          <input type="text" name="skill1-5" class="grey" />
+        </div>
+        <div class="extras">
+          <img src="images/border-left.png" class="border" /><h3>EXTRAS</h3><img src="images/border-right.png" class="border" />
+          <br />
+          <textarea name="extras"></textarea>
+        </div>
+        <div class="stunts">
+          <img src="images/border-left.png" class="border" /><h3>STUNTS</h3><img src="images/border-right.png" class="border" />
+          <br />
+          <textarea name="stunts"></textarea>
+        </div>
+        <div class="stress">
+          <img src="images/border-left.png" class="border" /><h3>PHYSICAL STRESS &nbsp; 
+            <span class="minus">&#8210;</span> &nbsp; <span class="plus">+</span> 
+          </h3><img src="images/border-right.png" class="border" />
+          <br />
+          1<input type="checkbox" name="pstress1" />
+          2<input type="checkbox" name="pstress2" />
+          3<input type="checkbox" name="pstress3" />
+          4<input type="checkbox" name="pstress4" />
+          <br />
+          <img src="images/border-left.png" class="border" /><h3>MENTAL STRESS &nbsp;&nbsp;&nbsp;&nbsp; 
+            <span class="minus">&#8210;</span> &nbsp; <span class="plus">+</span> 
+          </h3><img src="images/border-right.png" class="border" />
+          <br />
+          1<input type="checkbox" name="mstress1" />
+          2<input type="checkbox" name="mstress2" />
+          3<input type="checkbox" name="mstress3" />
+          4<input type="checkbox" name="mstress4" />
+          <br />
+        </div>
+        <div class="consequences">
+          <img src="images/border-left.png" class="border" /><h3>CONSEQUENCES</h3><img src="images/border-right.png" class="border" />
+          <br />
+            2<input type="text" name"consequence2" placeholder="Mild" />
+            <input type="text" name="consequence3" class="grey" placeholder="2:" /><br />
+            4<input type="text" name"consequence4" placeholder="Moderate" />
+            <input type="text" name="consequence3" class="grey" /><br />
+            6<input type="text" name"consequence6" placeholder="Severe" />
+            <input type="text" name="consequence3" class="grey" />
+        </div>
+      </form>
+
+    </div>
+    <div class="footer">
+      This work is based on Fate Core System and Fate Accelerated Edition (found at <a href="http://www.faterpg.com/" target="_blank">http://www.faterpg.com/</a>), products of Evil Hat Productions, LLC, developed, authored, and edited by Leonard Balsera, Brian Engard, Jeremy Keller, Ryan Macklin, Mike Olson, Clark Valentine, Amanda Valentine, Fred Hicks, and Rob Donoghue, and licensed for our use under the Creative Commons Attribution 3.0 Unported license (<a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">http://creativecommons.org/licenses/by/3.0/</a>). 
+    </div>
+  </body>
+</html>

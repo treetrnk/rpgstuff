@@ -1,25 +1,36 @@
 $(document).ready(function() {
   
-  $('#body').load('about.html');
+  var bodyClone = $('#body').clone();
 
   var include = function(replacedId, url) {
-    jQuery.get(url,function(data) {
-      $(replacedId).replaceWith(data);
+    $(replacedId).finish();
+    $(replacedId).fadeOut( function() {});
+    $(replacedId).fadeIn( function() {
+      console.log(replacedId);
+      console.log(url);
+      $.get(url,function(data) {
+        console.log(data);
+        $(replacedId).html(data);
+      });
     });
   };
 
   $('#link-fatecore').click(function(){
-    include('#body','fatecore/index.html');
+    include('#body','../fatecore.html');
     return false;
   });
 
   $('#link-storygen').click(function(){
-    include('#body','storygen/index.html');
+    include('#body','../storygen.html');
     return false;
   });
 
   $('#link-about').click(function(){
-    include('#body','about.html');
+    $('#body').finish();
+    $('#body').fadeOut( function() {} );
+    $('#body').fadeIn( function() {
+      $('#body').replaceWith(bodyClone);
+    });
     return false;
   });
 
