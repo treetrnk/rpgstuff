@@ -26,8 +26,8 @@ html, body {
     display: none !important;
   }
 
-  .content {
-    padding-left: 250px;
+  #body {
+    padding-left: 225px;
   }
 }
 
@@ -57,7 +57,7 @@ html, body {
 
 #nav {
   height: 100%;
-  width: 250px;
+  width: 225px;
   background: #333;
   float: left;
   display: block;

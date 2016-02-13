@@ -8,17 +8,19 @@ $(document).ready(function() {
     $(replacedId).fadeIn( function() {
       console.log(replacedId);
       console.log(url);
-      $(replacedId).load(url);
+      $.get(url,function(data) {
+        $(replacedId).html(data);
+      });
     });
   };
 
   $('#link-fatecore').click(function(){
-    include('#body','../fatecore.html');
+    include('#body','./fatecore.html');
     return false;
   });
 
   $('#link-storygen').click(function(){
-    include('#body','../storygen.html');
+    include('#body','./storygen.html');
     return false;
   });
 
