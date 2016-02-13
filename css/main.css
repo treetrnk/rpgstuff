@@ -45,6 +45,10 @@ html, body {
   text-decoration: none;
 }
 
+#hamburger {
+  cursor: pointer;
+}
+
 .title {
   text-align: center;
   margin: 7px 0px 7px 0px;

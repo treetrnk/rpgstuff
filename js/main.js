@@ -31,4 +31,9 @@ $(document).ready(function() {
     return false;
   });
 
+  $('#hamburger').click( function() {
+    $('#nav').fadeIn("slow", function() {
+      $('#nav').toggle();
+    });
+  });
 });
