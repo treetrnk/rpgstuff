@@ -8,10 +8,7 @@ $(document).ready(function() {
     $(replacedId).fadeIn( function() {
       console.log(replacedId);
       console.log(url);
-      $.get(url,function(data) {
-        console.log(data);
-        $(replacedId).html(data);
-      });
+      $(replacedId).load(url);
     });
   };
 

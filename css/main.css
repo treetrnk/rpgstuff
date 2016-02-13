@@ -20,6 +20,17 @@ html, body {
   z-index: 0;
 }
 
+@media screen and (min-width: 1250px) {
+  /* BIG SCREEN OPTIONS */
+  .header {
+    display: none !important;
+  }
+
+  .content {
+    padding-left: 250px;
+  }
+}
+
 .header h1 {
   display: block;
   margin-top: 0px;
@@ -50,6 +61,25 @@ html, body {
   top: 0px;
   left: 0px;
   z-index: 0;
+}
+
+@media screen and (max-width: 1249px) {
+  /* SMALL SCREEN OPTIONS */
+  #nav {
+    display: none !important;
+  }
+
+  #nav h1 {
+    display: none;
+  }
+
+  #body {
+    margin-top: 70px;
+  }
+  
+  .content {
+    padding: 0px 10px;
+  }
 }
 
 #nav h1 {
@@ -170,14 +200,13 @@ html, body {
 
 #body {
   display: block;
-  padding-top: 60px;
-  width: 1000px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .content {
-  width: 800px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
