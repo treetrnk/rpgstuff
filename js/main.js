@@ -4,12 +4,13 @@ $(document).ready(function() {
 
   var include = function(replacedId, url) {
     $(replacedId).finish();
-    $(replacedId).fadeOut( function() {});
-    $(replacedId).fadeIn( function() {
+    $(replacedId).fadeOut( function() {
       console.log(replacedId);
       console.log(url);
       $.get(url,function(data) {
         $(replacedId).html(data);
+      });
+    $(replacedId).fadeIn( function() {
       });
     });
   };
@@ -28,7 +29,7 @@ $(document).ready(function() {
     $('#body').finish();
     $('#body').fadeOut( function() {} );
     $('#body').fadeIn( function() {
-      $('#body').replaceWith(bodyClone);
+      $('#body').html(bodyClone);
     });
     return false;
   });

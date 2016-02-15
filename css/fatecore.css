@@ -13,18 +13,12 @@
   src: url(./fonts/Gotham-Ultra.otf);
 }
 
-html, body{
-  font-family: gothamMed, Arial;
-  font-size: 9pt;
-  background: #ccc;
-}
-
 a {
   color: #444;
 }
 
 .sheet {
-  max-width: 1000px !important;
+  min-width: 1000px !important;
   margin-right: auto;
   margin-left: auto;
   background: #fff;
