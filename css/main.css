@@ -1,6 +1,5 @@
 html, body {
   font-family: proxima-nova,Helvetica,Arial,sans-serif;
-  font-size: 14px;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   background: #ccc;
@@ -103,6 +102,8 @@ html, body {
   border-bottom: 1px solid #555;
   border-top: 1px solid #111;
   color: #fff;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
 }
 
 #nav a.page-link:hover {
