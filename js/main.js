@@ -1,6 +1,6 @@
 $(document).ready(function() {
   
-  var bodyClone = $('#body').clone();
+  var bodyClone = $('#content').clone();
 
   var include = function(replacedId, url) {
     $(replacedId).finish();
