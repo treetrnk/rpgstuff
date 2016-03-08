@@ -6,40 +6,24 @@
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
     <meta content="utf-8" http-equiv="encoding">
     
-    <!---
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    --->    
-
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-    <script src="js/main.js" type="text/javascript"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' 
       rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-
+    <script>
+      $(function() {
+        $('#header').load('./header.html');
+      });
+    </script>
   </head>
-  <body>
+  <body id="#body">
+
+    <div id="header"></div>
     
-    <div class="header">
-
-      <h1><span id="hamburger">&#9776;</span> rpg stuff</h1>
-    </div>
-
-    <div id="nav">
-      <h1>rpg stuff</h1>
-      <a href="#" class="page-link" id="link-fatecore">Fate Core Character Sheet</a>
-      <a href="#" class="page-link" id="link-storygen">Random Story Generator</a>
-      <a href="#" class="page-link" id="link-about">About This Site</a>
-      <div class="links">
-        <a href="https://github.com/treetrnk" class="icon-nav" target="_blank">
-          <img src="GitHub-Mark-Light-32px.png" title="GitHub" />
-        </a>
-        <a href="" class="icon-nav donate">donate</a>
-      </div>
-    </div>
-
-    <div id="body">
+    <div>
       <div class="content" id="content">
         <h2>about</h2>
         Welcome to my <i>RPG Stuff</i> website. Here you can find a small number of 

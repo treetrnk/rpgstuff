@@ -1,0 +1,193 @@
+.header {
+  color: #fff;
+  width: 100%;
+  background: #333;
+  overflow-y: hidden;
+  font-family: "Montserrat";
+  box-shadow: 5px 5px 5px #999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+@media screen and (min-width: 1250px) {
+  /* BIG SCREEN OPTIONS */
+  .header {
+    display: none !important;
+  }
+
+  #body {
+    padding-left: 225px;
+  }
+}
+
+.header h1 {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  max-width: 400px;
+  font-size: 28pt;
+  line-height: 60px;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+#hamburger {
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  margin: 7px 0px 7px 0px;
+  color: #222;
+}
+
+#nav {
+  height: 100%;
+  width: 225px;
+  background: #333;
+  float: left;
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1249px) {
+  /* SMALL SCREEN OPTIONS */
+  #nav {
+    display: none !important;
+  }
+
+  #nav h1 {
+    display: none;
+  }
+
+  #body {
+    margin-top: 70px;
+  }
+  
+  .content {
+    padding: 0px 10px;
+  }
+}
+
+#nav h1 {
+  font-size: 28pt;
+  text-align: center;
+  color: #fff;
+  line-height: 60px;
+  margin: 0px;
+  font-family: "Montserrat";
+}
+
+#nav a.page-link {
+  display: block;
+  text-align: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #555;
+  border-top: 1px solid #111;
+  color: #fff;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+
+#nav a.page-link:hover {
+  background: #222;
+}
+
+.links {
+  text-align: center;
+}
+
+.icon-nav {
+
+}
+/*
+#nav {
+  list-style: none;
+  font-size: 48pt;
+  position: absolute;
+  margin-top: -17px;
+  margin-left: -49px;
+  display: block;
+  z-index: 5;
+}
+
+#nav ul {
+  display: none;
+  list-style: none;
+  position: absolute;
+  width: 300px;
+  top: 77px;
+  left: -45px;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav li a {
+  line-height: 75px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#nav li:hover > ul {
+  display: block;
+}
+
+#nav ul li {
+  float: none;
+  position: relative;
+}
+
+#nav ul li a {
+  padding: 5px 25px;
+  line-height: 45px;
+  margin: 0px;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #111;
+  text-align: center;
+}
+
+#nav ul li a:hover {
+  background: #111;
+} */
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.links {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.donate {
+  background: #fff;
+  color: #333;
+  font-size: 7pt;
+  border-radius: 100px;
+  width: 35px;
+  text-decoration: none;
+  vertical-align: top;
+  padding-top: 11px; 
+  padding-bottom: 11px;
+  display: inline-block;
+  text-align: center;
+}
+
