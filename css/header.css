@@ -108,61 +108,6 @@
 .icon-nav {
 
 }
-/*
-#nav {
-  list-style: none;
-  font-size: 48pt;
-  position: absolute;
-  margin-top: -17px;
-  margin-left: -49px;
-  display: block;
-  z-index: 5;
-}
-
-#nav ul {
-  display: none;
-  list-style: none;
-  position: absolute;
-  width: 300px;
-  top: 77px;
-  left: -45px;
-}
-
-#nav li {
-  position: relative;
-}
-
-#nav li a {
-  line-height: 75px;
-  text-decoration: none;
-  color: #fff;
-}
-
-#nav li:hover > ul {
-  display: block;
-}
-
-#nav ul li {
-  float: none;
-  position: relative;
-}
-
-#nav ul li a {
-  padding: 5px 25px;
-  line-height: 45px;
-  margin: 0px;
-  background: #333;
-  color: #fff;
-  font-size: 14px;
-  display: block;
-  border-top: 1px solid #555;
-  border-bottom: 1px solid #111;
-  text-align: center;
-}
-
-#nav ul li a:hover {
-  background: #111;
-} */
 
 .right {
   float: right;
