@@ -1,7 +1,8 @@
 $(document).ready( function() {
 
   $('#hamburger').click(function() {
-    $('#nav').toggle("slow");
+    $('#nav').show();
+    $('#nav').css({'display':'block'});
   });
 
 });

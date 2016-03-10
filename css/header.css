@@ -8,14 +8,11 @@
   src: url(/rpg/css/fonts/Montserrat-Bold.ttf);
 }
 
-body {
-  min-width: 1050px;
-}
-
 .header {
   color: #fff;
   width: 100%;
   background: #333;
+  min-width: 250px;
   overflow-y: hidden;
   font-family: "montserrat";
   box-shadow: 5px 5px 5px #999;
