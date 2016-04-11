@@ -68,17 +68,12 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 0;
+  overflow: auto;
 }
 
 @media screen and (max-width: 1249px) {
   /* SMALL SCREEN OPTIONS */
   #nav {
-    display: none;
-    margin-top: 60px;
-  }
-
-  #nav h1 {
     display: none;
   }
 
