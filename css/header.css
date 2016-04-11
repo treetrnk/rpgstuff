@@ -8,6 +8,13 @@
   src: url(/rpg/css/fonts/Montserrat-Bold.ttf);
 }
 
+@media print {    
+  .no-print, .no-print * {
+      display: none !important;
+  }
+}
+                      
+
 .header {
   color: #fff;
   width: 100%;
