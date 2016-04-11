@@ -15,17 +15,17 @@
   min-width: 250px;
   overflow-y: hidden;
   font-family: "montserrat";
-  box-shadow: 5px 5px 5px #999;
+  box-shadow: 0px 5px 5px #000;
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 0;
+  z-index: 2;
 }
 
 @media screen and (min-width: 1250px) {
   /* BIG SCREEN OPTIONS */
   .header {
-    display: none !important;
+    display: none;
   }
 
   body {
@@ -49,6 +49,8 @@
 
 #hamburger {
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
 .title {
@@ -72,7 +74,8 @@
 @media screen and (max-width: 1249px) {
   /* SMALL SCREEN OPTIONS */
   #nav {
-    display: none !important;
+    display: none;
+    margin-top: 60px;
   }
 
   #nav h1 {
