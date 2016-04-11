@@ -28,6 +28,10 @@
     display: none;
   }
 
+  #nav {
+    display: block;
+  }
+
   body {
     margin-left: 225px;
   }

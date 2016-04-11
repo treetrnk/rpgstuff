@@ -4,6 +4,16 @@
           $('#nav').slideToggle("slow");
         });
 
+        //Show or hide the nav div on resize
+        //even after jQuery has altered it.
+        $(window).resize(function() {
+          if ($(window).width() > 1249) {
+            $('#nav').show();
+          } else {
+            $('#nav').hide();
+          };
+        });
+
       });
     </script>
 
