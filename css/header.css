@@ -54,6 +54,11 @@
   line-height: 60px;
 }
 
+.header h1 a, #nav h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .header a {
   text-decoration: none;
 }
