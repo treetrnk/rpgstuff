@@ -1,6 +1,7 @@
 html, body {
   font-family: proxima-nova,Helvetica,Arial,sans-serif;
   background: #ddd;
+  background: url(/rpg/images/notebook2X.png);
 }
 
 .content {
