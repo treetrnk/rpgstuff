@@ -55,6 +55,8 @@ html, body {
   max-width: 400px;
   font-size: 28pt;
   line-height: 60px;
+  font-family: "Montserrat";
+  font-weight: normal;
 }
 
 .header h1 a, #nav h1 a {
@@ -108,6 +110,7 @@ html, body {
   line-height: 60px;
   margin: 0px;
   font-family: "Montserrat";
+  font-weight: normal;
 }
 
 #nav a.page-link {
